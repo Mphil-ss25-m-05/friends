@@ -5,7 +5,61 @@
     <title>Birthday Wishes</title>
 </head>
 
+<body><!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hiring Message</title>
+</head>
+
 <body>
+
+    <h1>📢 Hiring Update</h1>
+
+    <p>Enter your name:</p>
+
+    <input type="text" id="name">
+
+    <button onclick="checkHire()">Submit</button>
+
+    <h2 id="message"></h2>
+
+    <script>
+
+        function checkHire() {
+
+            let name = document.getElementById("name").value;
+
+            // Convert input to lowercase for case-insensitive matching
+            name = name.toLowerCase();
+
+            if (
+                name == "ahmed" ||
+                name == "haseeb" ||
+                name == "usama" ||
+                name == "saif" ||
+                name == "yasir"
+            ) {
+
+                document.getElementById("message").innerHTML =
+                    "🎉 Congratulations Gando Spotted all the way from mehmood booti";
+
+            }
+
+            else {
+
+                document.getElementById("message").innerHTML =
+                    "Nikal dallay apna naam likh";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
 
     <h1>🎂 Birthday Wishes 🎉</h1>
 
